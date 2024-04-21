@@ -219,7 +219,7 @@ end
 
 --主要逻辑函数
 function _M.Main()
-	local res = _M.HtppRequest("http://192.168.10.4:8080/jsonfile_big/")
+	local res = _M.HtppRequest("http://192.168.x.x:8080/json/")
 	local jsondata  = _M.JsonMachine(res)
 	for k,v in pairs(jsondata) do
 		if type(v) == "table" then
